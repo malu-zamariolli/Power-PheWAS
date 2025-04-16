@@ -1,0 +1,25 @@
+#--------- Date: 
+# -------- Name: 
+
+
+# SNP to assess power for on additive model
+snp: rs7412_C
+
+
+# Number of times power will be run independently per regression type #maf * #alpha * #effect * #trait
+n_linear: 41
+n_logistic: 184
+n_ordinal: 114
+
+# params for power
+alpha: "0.05"
+n_sim: 10000
+maf: "0.06"
+effect: "0.4" # Beta or log(OR)
+
+# Power to filter (%)
+power: 80
+
+# Input files:
+trait_n: "path" # file with trait name and N (full or groups)
+unique_n: "path" # file with unique N and regression type (no trait name)
